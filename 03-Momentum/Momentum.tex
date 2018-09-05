@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}
+\usepackage{tikz}
+\usepackage[margin = 1.5in]{geometry}
+%opening
+\title{Demonstrating Conservation of Momentum in Two Dimensions with Colliding Bodies}
+\author{Andreas Badea, Vincent Du, Matthew Harvey}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+	\begin{tabular}{l r}
+		Date Performed: & October 18, 2017 \\ % Date the experiment was performed
+		Partners : & Vincent Du \\
+		& Matthew Harvey \\
+		Instructor: & Dr. Brad Miller % Instructor/supervisor
+	\end{tabular}
+\end{center}
+\section{Introduction}
+Momentum is the quantity, a property of a body, defined as being the product of its velocity and its mass.
+\begin{equation}
+\vec{p} = \vec{v} m
+\end{equation}
+Momentum is a vector quantity, in that it has both magnitude and direction. And furthermore, momentum is always conserved. No matter what happens, bar the action of any external force, the net momentum of a system remains both of the same magnitude and in the same direction. This one of the most fundamental notions in all of classical mechanics. 
+
+The first discussion of momentum came from Byzantine philosopher John Philoponus, who, in 530 AD, wrote a commentary refuting Aristotelian ideas of impetus. The Aristotelian viewpoint, which remained prevalent until the time of Galileo, thought that everything must be kept in motion by some agent. For example, a ball flying through the air was kept moving by currents in the air. Philoponus wrote that the Aristotelean view was absurd, and that the ball's impetus instead came from the hand throwing it which in turn lost its impetus. This was precursor to the modern notion of momentum and its conservation. In 1350, French Philosopher Jean Buridan first developed an expression for this momentum, writing that this impetus was proportional to a body's speed multiplied by its weight. And yet later Descartes wrote that the total ``Quantity of Motion'' in the universe was constant.
+
+Eventually, Isaac Newton formalized the modern notion of momentum. In fact, conservation of momentum is a corollary of Newtons 3rd law of Motion,
+\begin{equation}
+F_a - F_b = 0.
+\end{equation}
+As a vector quantity, both the direction and the magnitude of this quantity should be maintained in \(n\) dimensions. We will attempt to demonstrate this by allowing balls to collide and computing the momentum before and after the collisions. We will restrict ourselves to discussing momentum on the plane parallel to the floor. Because momentum is a vector quantity the components on the this plane should be conserved as well. This allows us to simplify many of the computations, and assume that no forces are acting on the balls. Of course gravity is acting on the balls, but because gravity is orthogonal to this plane we may imagine that it does not exist.  	
+\section{Procedure}
+Initially a single steel marble was placed on top of a ramp which rested on top of a table at a height of 92.5cm above the ground. This marble was allowed to hit the ground on top of which rested a large sheet of paper with a single sheet of carbon paper on top of that. This configuration resulted in a small dot on the sheet of paper at the location of each landing. This single marble will be used to measure the momentum sans collision. In a second round a second marble was placed at the bottom of the ramp and the two were allowed to collide. The locations in which these two colliding marbles were measured as well. In a third and final version the second marble was replaced with a steal marble. Each test was run a total of 25 times. And the standard deviation of both the angle and radius were estimated.
+\section{Data}
+\begin{figure}[h]
+\begin{center}
+\caption{The average radii and angles of each of the cases}
+\begin{tabular}{|c|c|c|}
+	\hline 
+	& Distance to Origin (cm) & Angle (\({}^\circ\))  \\ 
+	\hline 
+	Single Steel Marble & 46.1 \(\pm\) 1.0  &  88.1 \(\pm\) 0.5\\ 
+	\hline 
+	Steel that hit Steel & 28.3 \(\pm\)   1.3 & 131.9 \(\pm\) 3.9 \\ 
+	\hline 
+	Steel hit by Steel & 30.7 \(\pm\) 0.9 & 59.5 \(\pm\) 0.9 \\ 
+	\hline 
+	Steel that hit Glass & 37.4 \(\pm\) 0.7 & 103.5 \(\pm\) 0.9 \\ 
+	\hline 
+	Glass hit by Steel & 36.6 \(\pm\) 1.5 & 49.8 \(\pm\) 2.8 \\ 
+	\hline 
+\end{tabular}
+\end{center}
+\end{figure}
+\begin{figure}[h]
+	\begin{center}
+		\caption{Other Relevant Information}
+		\begin{tabular}{|c|c|}
+			\hline
+			Mass of First Steel Marble & 8.32 g \(\pm\) 0.01 g \\ 
+			\hline 
+			Mass of Second Steel Marble & 8.33 g \(\pm\) 0.01 g \\ 
+			\hline 
+			Mass of Glass Marble & 2.69 g \(\pm\) 0.01 g \\ 
+			\hline 
+			Height of Table & 92.5 cm \(\pm\) 0.1 cm \\ 
+			\hline 
+		\end{tabular}
+	\end{center}
+\end{figure}
+\section{Analysis}
+\subsection{Function for Momentum}
+Recall that momentum is defined as being the product of velocity and mass.
+\begin{equation}
+\vec{p} = \vec{v} m
+\end{equation}
+If momentum is truly conserved, then this value must remain constant in any system provided no external agent acts upon the system. In our case we may define our system as consisting the two marbles that collide with each other. In stating that momentum is conserved, we state that
+\begin{equation}
+\vec{p}_1 + \vec{p}_2 = \vec{p}_1^{\; \prime} + \vec{p}_2^{\; \prime}
+\end{equation}
+Where the momenta of each of the balls are represented by the expressions \( \vec{p}_1 \) and \(\vec{p}_2 \) and \(\vec{p}^{\, \prime} \) represents momentum after the event of interest. Alternatively one may substitute the instances of \(\vec{p}\) with its expression in terms of masses and velocities. For the sake of simplicity, we will assume that the collision does not cause a change in mass and will neglect from using \(m^\prime\) and use \(m\) wherever mass is written.
+\begin{equation}
+\vec{v}_1 m_1 + \vec{v}_2 m_2 = \vec{v}_1^{\; \prime} m_2 + \vec{v}_2^{\; \prime} m_2
+\end{equation}
+We may further simplify the expression by assuming that the second ball beg	an with a velocity of zero, allowing us to totally remove the term from the expression.
+\begin{equation}
+\vec{v}_1 m_1 = \vec{v}_1^{\; \prime} m_2 + \vec{v}_2^{\; \prime} m_2 \label{eq:1}
+\end{equation}
+If this equality holds we may presume that momentum has been conserved. However one finds it difficult to directly mention the velocity of the objects. But because, at least after the time of collision, the balls move in predicable parabolic arcs one may compute the velocity of the balls as a function of the distance they travel and the height from which they fall. Because we only concern ourselves with momentum on the plane parallel to the floor, we may compute the horizontal velocity of the ball, which should remain constant, as a function of the change in position \( \vec{r} \) and the time in the air \(t\). 
+\begin{equation}
+\vec{v} = \frac{\vec{r}}{t}
+\end{equation}
+Again, we find it difficult to directly measure the time spent in the air. However as a falling projectile we may compute the time in the air with a simple expression, as a function of the height and the gravitational acceleration.
+\begin{equation}
+t = \sqrt{\frac{2h}{g}}
+\end{equation}
+Substituting these expressions into the definition of momentum.
+\begin{equation}
+\vec{p} = m \vec{r} \sqrt{ \frac{g}{2 h} } 
+\end{equation}
+Because the change in position is measured as a distance and angle. We rewrite the expression as
+\begin{equation}
+\vec{p} =  m r \left(\cos(\theta) \hat{\imath} + \sin(\theta) \hat{\jmath} \right) \sqrt{ \frac{g}{2 h}} \label{eq:2}
+\end{equation}
+\subsection{Error in Momentum}
+One may find the error in the magnitude of the momentum by writing a sum in quadrature of the error in each each of th respective facts multiplied by the partial derivative of the momentum with respect to that factor. In the case of momentum these factors are the mass, the height, and the radius. This is made easier if one considers uncertainty as a fractional quantity.
+\begin{equation}
+\frac{\delta_{|p|}}{|p|} = \sqrt{\frac{\delta_m^2}{m^2}+\frac{\delta_r^2}{r^2}+\frac{\delta_h^2}{4 h^2}}
+\end{equation} 
+\subsection{Sum of Momenta}
+Replicating the expression in equation (\ref{eq:1}) we write an expression discussing the sum of the momenta. However we substitute in the expression for \(\vec{p}\) as computed in equation (\ref{eq:2}).
+\begin{equation}
+\vec{p} =  m_1 r_1 \left(\cos(\theta_1) \hat{\imath} + \sin(\theta_1) \hat{\jmath} \right) \sqrt{ \frac{g}{2 h}} + m_2 r_2 \left(\cos(\theta_2) \hat{\imath} + \sin(\theta_2) \hat{\jmath} \right) \sqrt{ \frac{g}{2 h}}
+\end{equation}
+We may express \( \vec{p} \) as a magnitude and an angle.
+\begin{equation}
+|p| = \sqrt{\frac{g}{2 h}}\sqrt{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\theta_p = \arctan \left( {\frac {m_1 r_1 \sin \left( \theta_1 \right) +m_2 r_2 \sin \left( \theta_2 \right) }{m_1 r_1 \cos \left( \theta_1 \right) +m_2 r_2\cos \left( \theta_2 \right) }} \right) 
+\end{equation}
+\subsection{Error in Sum of Momenta}
+We may recall that one may estimate the error in a quantity by taking a sum of product of the estimated errors in each of the quantities upon which the desired quantity is determined and the amount by which an error in one quantity affects the final one. The amount by which an error in a single factor affects the final result is proportional to the partial derivative of the final result with respect to the individual factor. However, as we assume that each of these individuals factors are independent of each other rather than taking a simple sum, we take the square root of the sum of the squares. For the case of magnitude of the sum of momenta, the value depends on 7 different values each with their own respective errors. The magnitude of the sum of momenta depends on the measured height of the ramp, the masses of each of the balls, the distances traveled by each of the balls, and the angles of the paths of each of the balls. So one may find the partial derivatives of momentum with respect to each of these values.
+\begin{equation}
+\delta_{|p|} \approx \sqrt{\sum \left( \delta_{x_i} \frac{\partial p}{ \partial x_i} \right) ^2 } \label{eq:3}
+\end{equation}
+\subsection{Too many Partial Derivatives}
+\begin{equation}
+\frac{\partial p}{ \partial h} = \frac{-p}{2 h} \label{eq:4}
+\end{equation}
+\begin{equation}
+\frac{\partial p}{ \partial \theta_1} = p \frac { {r_1} {r_2} {m_1} {m_2} \left( -2 \sin \left( \theta_1 \right) \cos \left( \theta_2 \right) +2 \cos \left( \theta_1 \right) \sin \left( \theta_2 \right)  \right) }{{r_1} {r_2} {m_2} { m_1} \left( 2 \cos \left( {t_1} \right) \cos \left( \theta_2 \right) +2 \sin \left( {\theta_1} \right) \sin \left( {\theta_2}\right)  \right)+{{m_1}}^{2}{{r_1}}^{2}+{{ m_2}}^{2}{{r_2}}^{2}}
+\end{equation}
+\begin{equation}
+\frac{\partial p}{ \partial \theta_2} = p \frac { {r_1} {r_2} {m_1} {m_2} \left( 2 \sin \left( \theta_1 \right) \cos \left( \theta_2 \right) -2 \cos \left( \theta_1 \right) \sin \left( \theta_2 \right)  \right) }{{r_1} {r_2} {m_2} { m_1} \left( 2 \cos \left( {t_1} \right) \cos \left( \theta_2 \right) +2 \sin \left( {\theta_1} \right) \sin \left( {\theta_2}\right)  \right)+{{m_1}}^{2}{{r_1}}^{2}+{{ m_2}}^{2}{{r_2}}^{2}}
+\end{equation}
+\begin{equation}
+\frac{\partial p}{ \partial m_1} = p \frac {r_1 m_2 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1 r_1^2}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\frac{\partial p}{ \partial m_2} = p \frac {r_1 m_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_2 r_2^2}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\frac{\partial p}{ \partial r_1} = p \frac {m_1 r_2 m_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + r_1 m_1^2}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\frac{\partial p}{ \partial r_2} = p \frac {m_1 r_1 m_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + r_2 m_2^2}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\label{eq:5}
+\end{equation}
+\subsection{Error in Angle of Sum of Momenta}
+One may do the same thing for the expression for the angle this time with only six parameters.
+\begin{equation}
+\frac{\partial p}{ \partial \theta_1} = \frac {m_1 r_1 m_2 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2} \label{eq:6}
+\end{equation}
+\begin{equation}
+\frac{\partial \theta_p}{ \partial \theta_2} = \frac {m_1 r_1 m_2 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_2^2 r_2^2}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\frac{\partial \theta_p}{ \partial m_1} = \frac {r_1 m_2 r_2 \left( \sin (\theta_1) \cos(\theta_2) + \sin (\theta_2) \cos(\theta_1) \right)}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\frac{\partial \theta_p}{ \partial r_1} = \frac {m_1 m_2 r_2 \left( \sin (\theta_1) \cos(\theta_2) + \sin (\theta_2) \cos(\theta_1) \right)}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2}
+\end{equation}
+\begin{equation}
+\frac{\partial \theta_p}{ \partial r_2} = \frac {r_1 m_1 m_2 \left( \sin (\theta_1) \cos(\theta_2) + \sin (\theta_2) \cos(\theta_1) \right)}{2 m_1 m_2 r_1 r_2 \left(\cos(\theta_1)\cos(\theta_2) + \sin(\theta_1)\sin(\theta_2) \right) + m_1^2 r_1^2 + m_2^2 r_2^2} \label{eq:7}
+\end{equation}
+\subsection{On Monstrous Expressions}
+Out of fear of a mathematically induced heart attack on the part of the reader, the authors choose to neglect to write either the error in the magnitude or angle as a single expression, and have chosen to separate it into the parts listed above. One is left to substitute the above expressions (\ref{eq:4}) all the way through (\ref{eq:5}) and (\ref{eq:6}) through (\ref{eq:7}) into the summation described in equation (\ref{eq:3}). This allows one to compute the error in both of the quantities.
+\section{Conclusion}
+With the expressions written above we may find the total momentum of each of the three cases in the experiment.
+\begin{figure}[h]
+	\caption{The Total Measured Momentum of Each System.}
+	\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline 
+	& Magnitude of Momentum (N s) & Angle of Momentum (\({}^{\circ}\))  \\ 
+	\hline 
+	Single Steel Marble &  0.0088  \( \pm \) 0.0002 & 88.1 \( \pm \) 0.5  \\ 
+	\hline 
+	Two Steel Marbles &  0.0086 \(\pm\)     0.0003 	& 91.4 \( \pm \) 2.6 \\ 
+	\hline 
+	One Steel One Glass &  0.0087 \( \pm \) 0.0004 & 86.0 \( \pm \) 0.9 \\ 
+	\hline 
+\end{tabular} 
+\end{center}
+\end{figure}
+
+For one, the figures seem to indicate rather strongly that momentum is conserved. The momentum of the single ball system is found to be 0.0088 \( \pm \) 0.0002 N\(\cdot\)s at the angle  \( {88.1}^{\circ} \pm 0.5\). The other two cases, with the collision of the balls have very similar calculated momenta, with the first having a momentum of 0.0086 \( \pm \) 0.0003 N\(\cdot\)s and an angle of \( {91.4}^{\circ} \pm 2.2\). These two values are remarkably close; comparing the magnitude of the momenta reveals a percent error of only 2.2 \% falling just inside of the bounds of the uncertainty of the measurements. The angles are somewhat father apart with a percent error 3.7 \%, this time falling a bit outside the uncertainty bounds of both measurements. When one considers the other case, the collision of the balls of different masses, the evidence remains strongly in support of conservation of momentum. The percent error this time is the smaller 1.1\%, and once again momentum is underestimated. The magnitude falls well within the bounds of uncertainty. The error in the angle is also larger this time, falling at 2.4\% and falling outside of the bounds of uncertainty.
+
+The computed values for momentum are all remarkably close to each other and thus strongly support the notion that momentum is conserved regardless of action. However the deviations we do see in the momentum likely stem from several sources. Firstly one must recall that the ball was simply placed on top of the ramp. Perhaps when placing the ball there, there was deviation in exactly where it was placed. Or perhaps it was occasionally given some initial velocity as it was released. Or maybe the ramp itself was somewhat depressed as the ball was held on to the ramp. All of these would have an effect on the velocity with which the marble left the ramp, and thus their momentum.  All of these factors could result in imprecision.
+
+Another factor to consider is the second balls initial position. The ball was placed on top of a screw protruding from the base of the ramp. The screw's angle with respect to the plane of the ramp was meant to be constant, however it is likely that some of the momentum of the balls went into the screw. This would have two effects. It would both decrease the momentum of the two ball system, as observed in the experiments. And it would slowly move the screw farther to the right and change the angle of intersection ever so slightly. This would introduce some variation to the measured momenta.
+
+One may also consider that the ball as having some rotation. It is likely that as the collision of the balls was not head on, and as the ball was already rolling down the ramp, that some of the balls translational momentum became rotational as it hit the second ball. This may acount for some of the small loss of momentum measured.
+
+Another property of the balls that may be computed is the elasticity of the collision. We may define a collision to be more elastic if it preserves more of its kinetic energy. Where kinetic energy is 
+\begin{equation}
+	K = \frac{1}{2}m v^2 
+\end{equation}
+We may compute \(v\) to be a function of height and range.
+\begin{equation}
+v = r \sqrt{\frac{g}{2h}}
+\end{equation}
+With these two expressions one may compute the elasticity as
+\begin{equation}
+\frac{K^{\prime}_1+K^{\prime}_2}{K}
+\end{equation}
+If one does this, one finds the elasticity of the steel on steel collision to be around 82\% while the steel of glass comes closer to 86\%. These percentages represent the amount of energy that was conserved in the collision.
+\end{document}

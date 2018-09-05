@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\usepackage{tikz}
+
+%opening
+\title{Making Measurements and Propagating Error}
+\author{Andreas Badea}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+	\begin{tabular}{l r}
+		Date Performed: & September 18, 2017 \\ % Date the experiment was performed
+		Partners: & Matt Kaminski \\ % Partner names
+		Instructor: & Dr. Brad Miller % Instructor/supervisor
+	\end{tabular}
+\end{center}
+\begin{tikzpicture}[scale = 1 in]
+	\draw
+	\end{tikzpicture}
+
+\end{document}
